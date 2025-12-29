@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact · INFOTEK</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact · INFOTEK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div id="loader">
-  <div class="loader-box">
-    <div class="loader-logo">INFOTEK</div>
-    <div class="loader-text">Opening secure channel…</div>
-  </div>
-</div>
-
-<div id="main-content">
-  <div class="page-wrapper">
-
-    <header class="header-frame">
-      <div class="top-bar">
-        <span>Secure Contact</span>
-        <span>INFOTEK Systems</span>
-      </div>
-
-      <div class="header-main">
-        <div class="logo-box"><div class="logo">INFOTEK</div></div>
-
-        <nav class="nav-center">
-          <a class="nav-item" href="solutions.html">Solutions</a>
-          <a class="nav-item" href="platform.html">Platform</a>
-          <a class="nav-item" href="company.html">Company</a>
-        </nav>
-
-        <div class="cta-box">
-          <a class="cta-main" href="contact.html">Contact</a>
+    <header>
+        <div class="meta-bar">
+            <span>SECURE CHANNEL</span>
+            <span>ENCRYPTION: TLS 1.3</span>
         </div>
-      </div>
+        <div class="nav-bar">
+            <a href="index.html" class="logo">INFOTEK</a>
+            <nav class="nav-links">
+                <div class="nav-item"><a href="platform.html">Platform</a></div>
+                <div class="nav-item"><a href="solutions.html">Solutions</a></div>
+                <div class="nav-item"><a href="company.html">Company</a></div>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="cta-btn">Start Now</a>
+            </div>
+        </div>
     </header>
 
-    <section class="hero">
-      <h1 class="typewriter">Start a conversation</h1>
-      <p class="typewriter delay">
-        Engage with our team to discuss system requirements and constraints.
-      </p>
-    </section>
+    <div class="page-wrapper" style="padding-top: 102px;">
 
-    <section class="hero">
-      <p>
-        Email: contact@infotek.systems  
-        <br />
-        Location: Irving, TX  
-        <br />
-        Availability: By appointment
-      </p>
-    </section>
+        <section class="section-pad">
+            <div class="container">
+                <div class="grid-2">
+                    <div>
+                        <span class="mono-label">Engage</span>
+                        <h1>Start a Conversation.</h1>
+                        <p>
+                            To request a demo, discuss a partnership, or schedule a briefing, please initiate a secure request below.
+                        </p>
+                        
+                        <div style="margin-top: 60px;">
+                            <span class="mono-label">Headquarters</span>
+                            <p class="text-sm">
+                                1200 Future Way<br>
+                                Denver, CO 80202<br>
+                                United States
+                            </p>
+                            
+                            <br>
+                            <span class="mono-label">General Inquiries</span>
+                            <p class="text-sm">contact@infotek.systems</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--bg-panel); padding: 40px; border: 1px solid var(--border-color);">
+                        <form>
+                            <div style="margin-bottom: 20px;">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe">
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" placeholder="john@company.com">
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <label for="org">Organization / Agency</label>
+                                <input type="text" id="org" placeholder="Department of Defense">
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <label for="message">Mission Context</label>
+                                <textarea id="message" rows="5" placeholder="Describe your operational requirements..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="cta-btn" style="width: 100%; text-align: center; cursor: pointer;">Initialize Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer class="footer">
-      © 2024 INFOTEK · Contact
-    </footer>
+        <footer>
+            <div class="container">
+                <div class="legal">
+                    <span>&copy; 2025 INFOTEK TECHNOLOGIES INC.</span>
+                </div>
+            </div>
+        </footer>
 
-  </div>
-</div>
-
-<script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
