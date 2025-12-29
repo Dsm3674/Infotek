@@ -1,91 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company · INFOTEK</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company · INFOTEK</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <header>
-        <div class="meta-bar">
-            <span>ABOUT US</span>
-            <span>EST. 2020</span>
-        </div>
-        <div class="nav-bar">
-            <a href="index.html" class="logo">INFOTEK</a>
-            <nav class="nav-links">
-                <div class="nav-item"><a href="platform.html">Platform</a></div>
-                <div class="nav-item"><a href="solutions.html">Solutions</a></div>
-                <div class="nav-item"><a href="company.html">Company</a></div>
-            </nav>
-            <div class="nav-actions">
-                <a href="contact.html" class="cta-btn">Start Now</a>
-            </div>
-        </div>
-    </header>
+<body data-page="company">
 
-    <div class="page-wrapper" style="padding-top: 102px;">
-
-        <section class="container hero" style="min-height: 60vh;">
-            <span class="mono-label">Who We Are</span>
-            <h1>Built by Engineers.</h1>
-            <p>
-                We do not employ marketers. We employ engineers, data scientists, and operators who understand the nuance of mission-critical systems.
-            </p>
-        </section>
-
-        <!-- STATS ROW (Transparent Grid) -->
-        <section class="border-t border-b">
-            <div class="container">
-                <div class="grid-3" style="border:none; background:transparent;">
-                    <div style="background:transparent; padding: 60px 0; border-right: 1px solid var(--border-color);">
-                        <span class="mono-label">Founded</span>
-                        <h2 style="font-size: 3rem; margin-bottom: 0;">2020</h2>
-                        <span class="text-sm text-muted">Denver, CO</span>
-                    </div>
-                    <div style="background:transparent; padding: 60px 0; border-right: 1px solid var(--border-color); padding-left: 40px;">
-                        <span class="mono-label">Employees</span>
-                        <h2 style="font-size: 3rem; margin-bottom: 0;">10+</h2>
-                        <span class="text-sm text-muted">Across 7 continents</span>
-                    </div>
-                    <div style="background:transparent; padding: 60px 0; padding-left: 40px;">
-                        <span class="mono-label">R&D Investment</span>
-                        <h2 style="font-size: 3rem; margin-bottom: 0;">$20k+</h2>
-                        <span class="text-sm text-muted">Annual Spend</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section-pad">
-            <div class="container">
-                <div class="grid-2">
-                    <div>
-                        <h3>Our Principles</h3>
-                        <p>We consult software for the long term. We prize engineering truth over sales narratives.</p>
-                        <p>Privacy and Civil Liberties are not afterthoughts; they are architectural constraints engineered into the core of our platform.</p>
-                    </div>
-                    <div>
-                        <h3>Join the Mission</h3>
-                        <p>We are looking for engineers who want to solve problems that matter.</p>
-                        <a href="#" class="cta-btn">View Open Roles</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="container">
-                <div class="legal">
-                    <span>&copy; 2025 INFOTEK TECHNOLOGIES INC.</span>
-                </div>
-            </div>
-        </footer>
-
+<header>
+  <div class="meta-bar">
+    <div class="meta-left">
+      <span>MODULE: ORGANIZATION_PROFILE</span>
+      <span style="margin-left:20px;">STATUS: ACTIVE</span>
     </div>
-    <script src="script.js"></script>
+    <div class="meta-right">
+      <span>EST. 2020</span>
+    </div>
+  </div>
+
+  <div class="nav-bar">
+    <a href="index.html" class="logo">INFOTEK</a>
+    <nav class="nav-links">
+      <div class="nav-item"><a href="platform.html" class="nav-link">Platform</a></div>
+      <div class="nav-item"><a href="solutions.html" class="nav-link">Solutions</a></div>
+      <div class="nav-item active"><a href="company.html" class="nav-link">Company</a></div>
+    </nav>
+    <div class="nav-actions">
+      <a href="contact.html" class="cta-btn">Engage</a>
+    </div>
+  </div>
+</header>
+
+<div class="page-wrapper" style="padding-top:102px;">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <span class="mono-label">Who We Are</span>
+      <h1>
+        Built by engineers.<br />
+        Trusted by institutions.
+      </h1>
+      <p>
+        INFOTEK is a software consulting firm specializing in the design, integration,
+        and deployment of mission-critical systems for enterprise and government environments.
+      </p>
+    </div>
+  </section>
+
+  <!-- STATS GRID -->
+  <section class="border-t border-b">
+    <div class="container">
+      <div class="grid-3">
+        <div>
+          <span class="mono-label">Founded</span>
+          <h2>2020</h2>
+          <p class="text-sm">Denver, CO</p>
+        </div>
+        <div>
+          <span class="mono-label">Team</span>
+          <h2>10+</h2>
+          <p class="text-sm">Engineers & Operators</p>
+        </div>
+        <div>
+          <span class="mono-label">Focus</span>
+          <h2>100%</h2>
+          <p class="text-sm">Custom Consulting</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <span class="mono-label">Our Principles</span>
+          <h3>Engineering Truth</h3>
+          <p>
+            We reject sales-driven software. Every engagement begins with constraints,
+            systems behavior, and long-term operational reality.
+          </p>
+        </div>
+        <div>
+          <span class="mono-label">Civil Liberties</span>
+          <h3>Built-In, Not Bolted-On</h3>
+          <p>
+            Privacy, governance, and accountability are architectural requirements,
+            not compliance checkboxes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="legal">
+        <span>&copy; 2025 INFOTEK TECHNOLOGIES INC.</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
