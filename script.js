@@ -1,7 +1,4 @@
-/**
- * INFOTEK SYSTEMS CORE LOGIC
- * v4.0.2 - STABLE
- */
+
 
 document.addEventListener("DOMContentLoaded", () => {
     initSystem();
@@ -17,9 +14,7 @@ function initSystem() {
     initScrollObserver();
 }
 
-/* =========================================
-   1. LOADER SEQUENCE
-   ========================================= */
+
 function initLoader() {
     const loader = document.getElementById('loader');
     const scanLine = document.querySelector('.scan-line');
@@ -58,9 +53,7 @@ function initLoader() {
     }, 2200);
 }
 
-/* =========================================
-   2. MEGA MENU & NAVIGATION
-   ========================================= */
+
 function initMegaMenu() {
     const navItems = document.querySelectorAll('[data-menu-target]');
     const menuContainer = document.querySelector('.mega-menu-container');
@@ -120,9 +113,7 @@ function initMegaMenu() {
     });
 }
 
-/* =========================================
-   3. TYPEWRITER ENGINE
-   ========================================= */
+
 function initTypewriters() {
     const elements = document.querySelectorAll('.js-typewrite');
     
@@ -175,9 +166,7 @@ function initTypewriters() {
     });
 }
 
-/* =========================================
-   4. INFINITE TICKER CLONING
-   ========================================= */
+
 function initTicker() {
     const track = document.querySelector('.ticker-track');
     if (!track) return;
@@ -187,9 +176,7 @@ function initTicker() {
     track.innerHTML = content + content + content + content;
 }
 
-/* =========================================
-   5. CANVAS NETWORK BACKGROUND
-   ========================================= */
+
 function initNetworkBackground() {
     const canvas = document.getElementById('network-canvas');
     if (!canvas) return;
@@ -273,9 +260,7 @@ function initNetworkBackground() {
     animate();
 }
 
-/* =========================================
-   6. UTILITIES
-   ========================================= */
+
 function highlightActivePage() {
     const path = window.location.pathname.split("/").pop() || 'index.html';
     const links = document.querySelectorAll('.nav-link');
