@@ -207,3 +207,26 @@ body {
   50% { border-color: transparent; }
 }
 
+/* MEGA MENU */
+.mega-menu {
+  position: absolute;
+  width: 100%;
+  background: #0b0c0f;
+  border-bottom: 1px solid #2a2d34;
+  z-index: 50;
+
+  /* KEY FIX: don't steal clicks when closed */
+  pointer-events: none;
+}
+
+.mega-panel {
+  display: none;
+  padding: 48px 80px;
+}
+
+/* When open, allow interaction */
+.mega-panel.active {
+  display: block;
+  pointer-events: auto;
+}
+
