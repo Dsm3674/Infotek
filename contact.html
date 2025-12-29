@@ -1,96 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact · INFOTEK</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · INFOTEK</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <header>
-        <div class="meta-bar">
-            <span>SECURE CHANNEL</span>
-            <span>ENCRYPTION: TLS 1.3</span>
-        </div>
-        <div class="nav-bar">
-            <a href="index.html" class="logo">INFOTEK</a>
-            <nav class="nav-links">
-                <div class="nav-item"><a href="platform.html">Platform</a></div>
-                <div class="nav-item"><a href="solutions.html">Solutions</a></div>
-                <div class="nav-item"><a href="company.html">Company</a></div>
-            </nav>
-            <div class="nav-actions">
-                <a href="contact.html" class="cta-btn">Start Now</a>
-            </div>
-        </div>
-    </header>
+<body data-page="contact">
 
-    <div class="page-wrapper" style="padding-top: 102px;">
-
-        <section class="section-pad">
-            <div class="container">
-                <div class="grid-2">
-                    <div>
-                        <span class="mono-label">Engage</span>
-                        <h1>Start a Conversation.</h1>
-                        <p>
-                            To request a demo, discuss a partnership, or schedule a briefing, please initiate a secure request below.
-                        </p>
-                        
-                        <div style="margin-top: 60px;">
-                            <span class="mono-label">Headquarters</span>
-                            <p class="text-sm">
-                               7322 Ridgepoint Dr<br>
-                                Irving, TX 75063<br>
-                                United States
-                            </p>
-                            
-                            <br>
-                            <span class="mono-label">General Inquiries</span>
-                            <p class="text-sm">somasekhar.mb@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div style="background: var(--bg-panel); padding: 40px; border: 1px solid var(--border-color);">
-                        <form>
-                            <div style="margin-bottom: 20px;">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" placeholder="John Doe">
-                            </div>
-                            
-                            <div style="margin-bottom: 20px;">
-                                <label for="email">Work Email</label>
-                                <input type="email" id="email" placeholder="john@company.com">
-                            </div>
-                            
-                            <div style="margin-bottom: 20px;">
-                                <label for="org">Organization / Agency</label>
-                                <input type="text" id="org" placeholder="Department of Defense">
-                            </div>
-                            
-                            <div style="margin-bottom: 20px;">
-                                <label for="message">Mission Context</label>
-                                <textarea id="message" rows="5" placeholder="Describe your operational requirements..."></textarea>
-                            </div>
-                            
-                            <button type="submit" class="cta-btn" style="width: 100%; text-align: center; cursor: pointer;">Initialize Request</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div class="container">
-                <div class="legal">
-                    <span>&copy; 2025 INFOTEK TECHNOLOGIES INC.</span>
-                </div>
-            </div>
-        </footer>
-
+<header>
+  <div class="meta-bar">
+    <div class="meta-left">
+      <span>SECURE_CHANNEL: ENABLED</span>
+      <span style="margin-left:20px;">ENCRYPTION: TLS 1.3</span>
     </div>
-    <script src="script.js"></script>
+    <div class="meta-right">
+      <span>RESPONSE SLA: 24–48H</span>
+    </div>
+  </div>
+
+  <div class="nav-bar">
+    <a href="index.html" class="logo">INFOTEK</a>
+    <nav class="nav-links">
+      <div class="nav-item"><a href="platform.html" class="nav-link">Platform</a></div>
+      <div class="nav-item"><a href="solutions.html" class="nav-link">Solutions</a></div>
+      <div class="nav-item"><a href="company.html" class="nav-link">Company</a></div>
+    </nav>
+    <div class="nav-actions">
+      <a href="contact.html" class="cta-btn">Secure Request</a>
+    </div>
+  </div>
+</header>
+
+<div class="page-wrapper" style="padding-top:102px;">
+
+  <section class="hero">
+    <div class="container">
+      <span class="mono-label">Engagement</span>
+      <h1>Initiate a Secure Request.</h1>
+      <p>
+        All engagements begin with a technical briefing.
+        No automated sales funnels. No generic demos.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-pad border-t">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <span class="mono-label">Headquarters</span>
+          <p class="mono-data">
+            Irving, TX<br />
+            United States
+          </p>
+        </div>
+        <div>
+          <span class="mono-label">Contact</span>
+          <p class="mono-data">
+            consulting@infotek.systems
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="legal">
+        <span>&copy; 2025 INFOTEK TECHNOLOGIES INC.</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
