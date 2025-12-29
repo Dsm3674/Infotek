@@ -9,7 +9,6 @@
 
 <body>
 
-<!-- LOADER -->
 <div id="loader">
   <div class="loader-box">
     <div class="loader-logo">INFOTEK</div>
@@ -20,7 +19,6 @@
 <div id="main-content">
   <div class="page-wrapper">
 
-    <!-- HEADER -->
     <header class="header-frame">
       <div class="top-bar">
         <span>System operational</span>
@@ -32,11 +30,10 @@
           <div class="logo">INFOTEK</div>
         </div>
 
-        <!-- NAV: now LINKS, not buttons -->
-        <nav class="nav-center">
-          <a class="nav-item" href="solutions.html" data-menu="solutions">Solutions</a>
-          <a class="nav-item" href="platform.html" data-menu="platform">Platform</a>
-          <a class="nav-item" href="company.html" data-menu="company">Company</a>
+        <nav class="nav-center" data-role="primary-nav">
+          <a class="nav-item" href="solutions.html">Solutions</a>
+          <a class="nav-item" href="platform.html">Platform</a>
+          <a class="nav-item" href="company.html">Company</a>
         </nav>
 
         <div class="cta-box">
@@ -45,85 +42,23 @@
       </div>
     </header>
 
-    <!-- MEGA MENU -->
-    <section class="mega-menu">
-
-      <div class="mega-panel" data-panel="solutions">
-        <div class="mega-grid">
-          <div class="mega-col">
-            <h4>Architecture</h4>
-            <a href="solutions.html">Cloud Infrastructure</a>
-            <a href="solutions.html">Hybrid Systems</a>
-            <a href="solutions.html">Legacy Modernization</a>
-          </div>
-          <div class="mega-col">
-            <h4>Data</h4>
-            <a href="solutions.html">Data Engineering</a>
-            <a href="solutions.html">Analytics Platforms</a>
-            <a href="solutions.html">Operational Intelligence</a>
-          </div>
-          <div class="mega-col">
-            <h4>Security</h4>
-            <a href="solutions.html">Compliance</a>
-            <a href="solutions.html">Zero Trust</a>
-            <a href="solutions.html">Identity Systems</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="mega-panel" data-panel="platform">
-        <div class="mega-grid">
-          <div class="mega-col">
-            <h4>Core</h4>
-            <a href="platform.html">Integration Layer</a>
-            <a href="platform.html">Workflow Engine</a>
-            <a href="platform.html">Data Modeling</a>
-          </div>
-          <div class="mega-col">
-            <h4>Deployment</h4>
-            <a href="platform.html">Cloud</a>
-            <a href="platform.html">On-Prem</a>
-            <a href="platform.html">Air-Gapped</a>
-          </div>
-          <div class="mega-col">
-            <h4>Governance</h4>
-            <a href="platform.html">Audit Trails</a>
-            <a href="platform.html">Policy Enforcement</a>
-            <a href="platform.html">Access Control</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="mega-panel" data-panel="company">
-        <div class="mega-grid">
-          <div class="mega-col">
-            <h4>About</h4>
-            <a href="company.html">Mission</a>
-            <a href="company.html">Leadership</a>
-            <a href="company.html">Careers</a>
-          </div>
-          <div class="mega-col">
-            <h4>Resources</h4>
-            <a href="company.html">Case Studies</a>
-            <a href="company.html">Whitepapers</a>
-            <a href="company.html">Documentation</a>
-          </div>
-          <div class="mega-col">
-            <h4>Contact</h4>
-            <a href="contact.html">Engagement</a>
-            <a href="contact.html">Support</a>
-            <a href="contact.html">Security Disclosure</a>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- HERO -->
-    <section class="hero">
+    <section class="hero" data-role="hero">
       <h1 class="typewriter">Enterprise systems built for permanence</h1>
       <p class="typewriter delay">
         Architecture, integration, and infrastructure for mission-critical environments.
+      </p>
+    </section>
+
+    <!-- SYSTEM IMAGE BLOCK -->
+    <section class="system-media">
+      <img src="https://www.palantir.com/docs/resources/foundry/platform-overview/ai-mesh.png" alt="System mesh visualization">
+    </section>
+
+    <section class="hero secondary">
+      <p>
+        INFOTEK designs software that behaves like infrastructure — durable,
+        auditable, and resistant to failure. We prioritize systems thinking
+        over surface-level optimization.
       </p>
     </section>
 
@@ -137,4 +72,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
