@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Company · INFOTEK</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company · INFOTEK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div id="loader">
-  <div class="loader-box">
-    <div class="loader-logo">INFOTEK</div>
-    <div class="loader-text">Loading company profile…</div>
-  </div>
-</div>
-
-<div id="main-content">
-  <div class="page-wrapper">
-
-    <header class="header-frame">
-      <div class="top-bar">
-        <span>INFOTEK</span>
-        <span>Company Overview</span>
-      </div>
-
-      <div class="header-main">
-        <div class="logo-box"><div class="logo">INFOTEK</div></div>
-
-        <nav class="nav-center">
-          <a class="nav-item" href="solutions.html">Solutions</a>
-          <a class="nav-item" href="platform.html">Platform</a>
-          <a class="nav-item" href="company.html">Company</a>
-        </nav>
-
-        <div class="cta-box">
-          <a class="cta-main" href="contact.html">Contact</a>
+    <header>
+        <div class="meta-bar">
+            <span>ABOUT US</span>
+            <span>EST. 2020</span>
         </div>
-      </div>
+        <div class="nav-bar">
+            <a href="index.html" class="logo">INFOTEK</a>
+            <nav class="nav-links">
+                <div class="nav-item"><a href="platform.html">Platform</a></div>
+                <div class="nav-item"><a href="solutions.html">Solutions</a></div>
+                <div class="nav-item"><a href="company.html">Company</a></div>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="cta-btn">Start Now</a>
+            </div>
+        </div>
     </header>
 
-    <section class="hero">
-      <h1 class="typewriter">Built by engineers, not marketers</h1>
-      <p class="typewriter delay">
-        A company focused on clarity, accountability, and long-term systems thinking.
-      </p>
-    </section>
+    <div class="page-wrapper" style="padding-top: 102px;">
 
-    <section class="hero">
-      <p>
-        INFOTEK was founded to solve operational problems that require precision,
-        discipline, and an understanding of how systems behave over time.
-      </p>
-    </section>
+        <section class="container hero" style="min-height: 60vh;">
+            <span class="mono-label">Who We Are</span>
+            <h1>Built by Engineers.</h1>
+            <p>
+                We do not employ marketers. We employ engineers, data scientists, and operators who understand the nuance of mission-critical systems.
+            </p>
+        </section>
 
-    <footer class="footer">
-      © 2024 INFOTEK · Company
-    </footer>
+        <!-- STATS ROW (Transparent Grid) -->
+        <section class="border-t border-b">
+            <div class="container">
+                <div class="grid-3" style="border:none; background:transparent;">
+                    <div style="background:transparent; padding: 60px 0; border-right: 1px solid var(--border-color);">
+                        <span class="mono-label">Founded</span>
+                        <h2 style="font-size: 3rem; margin-bottom: 0;">2020</h2>
+                        <span class="text-sm text-muted">Denver, CO</span>
+                    </div>
+                    <div style="background:transparent; padding: 60px 0; border-right: 1px solid var(--border-color); padding-left: 40px;">
+                        <span class="mono-label">Employees</span>
+                        <h2 style="font-size: 3rem; margin-bottom: 0;">2,500+</h2>
+                        <span class="text-sm text-muted">Across 12 Offices</span>
+                    </div>
+                    <div style="background:transparent; padding: 60px 0; padding-left: 40px;">
+                        <span class="mono-label">R&D Investment</span>
+                        <h2 style="font-size: 3rem; margin-bottom: 0;">$450M</h2>
+                        <span class="text-sm text-muted">Annual Spend</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-pad">
+            <div class="container">
+                <div class="grid-2">
+                    <div>
+                        <h3>Our Principles</h3>
+                        <p>We build software for the long term. We prize engineering truth over sales narratives.</p>
+                        <p>Privacy and Civil Liberties are not afterthoughts; they are architectural constraints engineered into the core of our platform.</p>
+                    </div>
+                    <div>
+                        <h3>Join the Mission</h3>
+                        <p>We are looking for engineers who want to solve problems that matter.</p>
+                        <a href="#" class="cta-btn">View Open Roles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  </div>
-</div>
+        <footer>
+            <div class="container">
+                <div class="legal">
+                    <span>&copy; 2025 INFOTEK TECHNOLOGIES INC.</span>
+                </div>
+            </div>
+        </footer>
 
-<script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
