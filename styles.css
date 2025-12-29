@@ -213,3 +213,16 @@ body {
   50% { border-color: transparent; }
 }
 
+.typewriter {
+  animation:
+    typing 2.8s steps(40, end) forwards,
+    caret 1s steps(1) infinite;
+}
+
+.typewriter.delay {
+  animation:
+    typing 2.4s steps(60, end) forwards,
+    caret 1s steps(1) infinite;
+  animation-delay: 2.9s, 0s;
+}
+
