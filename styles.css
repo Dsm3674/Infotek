@@ -1,6 +1,4 @@
-/* =========================================
-   1. VARIABLES & CONFIGURATION
-   ========================================= */
+
 :root {
   /* Core Colors */
   --bg-core: #050505;        /* Deepest black for body */
@@ -34,9 +32,7 @@
   --grid-gap: 1px;           /* 1px gap for 'border grid' effect */
 }
 
-/* =========================================
-   2. RESET & BASE STYLES
-   ========================================= */
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -92,9 +88,7 @@ img, video, svg {
   height: auto;
 }
 
-/* =========================================
-   3. TYPOGRAPHY UTILITIES
-   ========================================= */
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -148,9 +142,7 @@ p {
 .text-sm { font-size: 0.875rem; }
 .text-muted { color: var(--text-muted); }
 
-/* =========================================
-   4. LAYOUT COMPONENTS
-   ========================================= */
+
 .container {
   width: 100%;
   max-width: var(--container-max);
@@ -207,9 +199,7 @@ p {
   background-color: var(--bg-hover);
 }
 
-/* =========================================
-   5. NAVIGATION & HEADER
-   ========================================= */
+
 header {
   position: fixed;
   top: 0;
@@ -320,9 +310,7 @@ header {
   border-color: var(--text-primary);
 }
 
-/* =========================================
-   6. MEGA MENU SYSTEM
-   ========================================= */
+
 .mega-menu-container {
   position: absolute;
   top: calc(var(--header-height) + var(--meta-bar-height));
@@ -406,9 +394,7 @@ header {
   transition: all 0.2s ease;
 }
 
-/* =========================================
-   7. LOADER ANIMATION
-   ========================================= */
+
 #loader {
   position: fixed;
   inset: 0;
@@ -452,9 +438,7 @@ header {
   50% { opacity: 0; }
 }
 
-/* =========================================
-   8. HERO SECTION COMPONENTS
-   ========================================= */
+
 .hero {
   position: relative;
   padding: 160px 40px 100px;
@@ -478,9 +462,7 @@ header {
   animation: blinker 1s step-end infinite;
 }
 
-/* =========================================
-   9. DATA TICKER & STATS
-   ========================================= */
+
 .stats-ticker {
   background-color: #000;
   border-bottom: 1px solid var(--border-color);
@@ -521,9 +503,7 @@ header {
   100% { transform: translateX(-50%); }
 }
 
-/* =========================================
-   10. FEATURE CARDS & GRIDS
-   ========================================= */
+
 .feature-card {
   height: 100%;
   display: flex;
@@ -563,9 +543,7 @@ header {
   font-variant-numeric: tabular-nums;
 }
 
-/* =========================================
-   11. FORM STYLES (Contact)
-   ========================================= */
+
 input, textarea, select {
   width: 100%;
   background: transparent;
@@ -593,9 +571,7 @@ label {
   text-transform: uppercase;
 }
 
-/* =========================================
-   12. FOOTER
-   ========================================= */
+
 footer {
   padding-top: 80px;
   border-top: 1px solid var(--border-color);
@@ -642,9 +618,6 @@ footer {
   color: var(--text-muted);
 }
 
-/* =========================================
-   13. RESPONSIVE MEDIA QUERIES
-   ========================================= */
 
 /* Tablet (Landscape) & Small Laptops */
 @media (max-width: 1200px) {
