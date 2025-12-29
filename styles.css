@@ -186,3 +186,30 @@ body {
   font-size: 12px;
   color: #7c808a;
 }
+
+
+.typewriter {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #e6e7eb;
+  animation: typing 2.8s steps(40, end) forwards,
+             caret 1s steps(1) infinite;
+}
+
+.typewriter.delay {
+  animation:
+    typing 2.4s steps(60, end) forwards,
+    caret 1s steps(1) infinite;
+  animation-delay: 2.9s, 2.9s;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes caret {
+  50% { border-color: transparent; }
+}
+
