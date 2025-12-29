@@ -117,8 +117,13 @@ body {
 
 /* MEGA MENU */
 .mega-menu {
+  position: absolute;
+  width: 100%;
+  background: #0b0c0f;
   border-bottom: 1px solid #2a2d34;
+  z-index: 50;
 }
+
 
 .mega-panel {
   display: none;
@@ -153,7 +158,11 @@ body {
   color: #ffffff;
 }
 
-/* HERO */
+.hero {
+  border-top: 1px solid #2a2d34;
+}
+
+  
 .hero {
   padding: 120px 80px;
   text-align: center;
