@@ -49,6 +49,8 @@ body {
 
 /* HEADER */
 .header-frame {
+  position: relative;
+  z-index: 60;
   border-bottom: 1px solid #2a2d34;
 }
 
@@ -120,6 +122,7 @@ body {
   background: #0b0c0f;
   border-bottom: 1px solid #2a2d34;
   z-index: 50;
+  pointer-events: none;
 }
 
 .mega-panel {
@@ -129,6 +132,7 @@ body {
 
 .mega-panel.active {
   display: block;
+  pointer-events: auto;
 }
 
 .mega-grid {
@@ -170,6 +174,8 @@ body {
 
 .hero p {
   color: #9aa0aa;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* FOOTER */
@@ -181,21 +187,28 @@ body {
   color: #7c808a;
 }
 
-/* TYPEWRITER */
+/* ===============================
+   TYPEWRITER (CONTROLLED, CSS)
+   =============================== */
+
 .typewriter {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
+  width: 0;
   border-right: 2px solid #e6e7eb;
-  animation: typing 2.8s steps(40, end) forwards,
-             caret 1s steps(1) infinite;
 }
 
-.typewriter.delay {
+#main-content.visible .typewriter {
+  animation: typing 2.6s steps(40, end) forwards,
+             caret 1s steps(1) 3;
+}
+
+#main-content.visible .typewriter.delay {
   animation:
-    typing 2.4s steps(60, end) forwards,
-    caret 1s steps(1) infinite;
-  animation-delay: 2.9s, 0s;
+    typing 2.2s steps(60, end) forwards,
+    caret 1s steps(1) 3;
+  animation-delay: 2.7s, 2.7s;
 }
 
 @keyframes typing {
@@ -207,26 +220,12 @@ body {
   50% { border-color: transparent; }
 }
 
-/* MEGA MENU */
-.mega-menu {
-  position: absolute;
-  width: 100%;
-  background: #0b0c0f;
-  border-bottom: 1px solid #2a2d34;
-  z-index: 50;
-
-  /* KEY FIX: don't steal clicks when closed */
-  pointer-events: none;
+@media (prefers-reduced-motion: reduce) {
+  .typewriter {
+    width: auto;
+    border-right: none;
+    animation: none;
+  }
 }
 
-.mega-panel {
-  display: none;
-  padding: 48px 80px;
-}
-
-/* When open, allow interaction */
-.mega-panel.active {
-  display: block;
-  pointer-events: auto;
-}
 
