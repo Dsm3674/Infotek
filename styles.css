@@ -11,6 +11,7 @@ body {
   line-height: 1.45;
 }
 
+/* LOADER */
 #loader {
   position: fixed;
   inset: 0;
@@ -30,8 +31,9 @@ body {
 }
 
 .loader-logo {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 600;
+  letter-spacing: -0.4px;
 }
 
 .loader-text {
@@ -39,9 +41,7 @@ body {
   color: #9aa0aa;
 }
 
-#main-content { display: none; }
-#main-content.visible { display: block; }
-
+/* WRAPPER */
 .page-wrapper {
   border: 1px solid #2a2d34;
   min-height: 100vh;
@@ -63,25 +63,22 @@ body {
 
 .header-main {
   display: grid;
-  grid-template-columns: 260px 1fr 200px;
+  grid-template-columns: 220px 1fr 180px;
   align-items: center;
 }
 
 .logo-box {
-  padding: 32px;
+  padding: 28px 32px;
   border-right: 1px solid #2a2d34;
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
-.logo-sub {
-  font-size: 11px;
-  color: #9aa0aa;
-}
-
+/* NAV */
 .nav-center {
   display: flex;
   gap: 32px;
@@ -101,6 +98,7 @@ body {
   color: #ffffff;
 }
 
+/* CTA */
 .cta-box {
   display: flex;
   justify-content: center;
@@ -123,7 +121,6 @@ body {
   border-bottom: 1px solid #2a2d34;
   z-index: 50;
 }
-
 
 .mega-panel {
   display: none;
@@ -158,12 +155,9 @@ body {
   color: #ffffff;
 }
 
+/* HERO */
 .hero {
   border-top: 1px solid #2a2d34;
-}
-
-  
-.hero {
   padding: 120px 80px;
   text-align: center;
 }
@@ -187,7 +181,7 @@ body {
   color: #7c808a;
 }
 
-
+/* TYPEWRITER */
 .typewriter {
   display: inline-block;
   white-space: nowrap;
@@ -201,7 +195,7 @@ body {
   animation:
     typing 2.4s steps(60, end) forwards,
     caret 1s steps(1) infinite;
-  animation-delay: 2.9s, 2.9s;
+  animation-delay: 2.9s, 0s;
 }
 
 @keyframes typing {
@@ -211,18 +205,5 @@ body {
 
 @keyframes caret {
   50% { border-color: transparent; }
-}
-
-.typewriter {
-  animation:
-    typing 2.8s steps(40, end) forwards,
-    caret 1s steps(1) infinite;
-}
-
-.typewriter.delay {
-  animation:
-    typing 2.4s steps(60, end) forwards,
-    caret 1s steps(1) infinite;
-  animation-delay: 2.9s, 0s;
 }
 
